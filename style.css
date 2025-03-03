@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fff5dc;
+}
+
+header {
+    background-color: #fff5dc00;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Vertically center all elements */
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+}
+
+header div {
+    flex: 1; /* Equal width for left and right divs */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+}
+
+#midHead {
+    flex: 1.5; /* Middle div slightly larger */
+}
+
+#leftHead h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #8b471c;
+}
+
+header img {
+    height: 100px;
+    width: auto; /* Maintain aspect ratio */
+}
+
+#midHead img {
+    height: 130px; /* Bigger middle logo */
+}
+
+#rightHead img {
+    height: 50px; /* Significantly bigger right logo */
+    max-height: 50px; /* Prevents overflowing */
+}
+
+/* Remove fixed heights */
+#leftHead, #midHead, #rightHead {
+    width: 33%;
+}
+
+.content {
+    padding: 20px;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-section img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+#menuItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#menuItems div {
+    height: 400px;
+    width: calc(100% - 40px);
+    max-width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#menuItems div h3, #menuItems div p, #menuItems div h5 {
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+    margin: 5px;
+}
+
+#menuItems div h3 {
+    margin-top: 5px;
+    font-size: xx-large;
+}
+
+#menuItems div h5 {
+    font-size: x-large;
+}
+
+#menuItems div p {
+    margin-top: auto;
+    padding: 10px;
+    font-size: xx-large;
+    background-color: #d98049;
+    border-radius: 10px;
+    width: 20%;
+    align-self: center;
+}
+
+#menuItems #chocolat { background-image: url('images/itemsSiteweb/chocolat.png'); }
+#menuItems #pop { background-image: url('images/itemsSiteweb/pop.png'); }
+#menuItems #gatorade { background-image: url('images/itemsSiteweb/gatorade.png'); }
+#menuItems #popcorn { background-image: url('images/itemsSiteweb/popcorn.png'); }
+#menuItems #chips { background-image: url('images/itemsSiteweb/chips.png'); }
+#menuItems #bonbons { background-image: url('images/itemsSiteweb/bonbons.png'); }
+#menuItems #noodles { background-image: url('images/itemsSiteweb/ramen.png'); }
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100vh) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+#suggestions {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    margin-top: 30px;
+}
+
+#suggestions a {
+    font-size: 1.2em;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#suggestions a:hover {
+    text-decoration: underline;
+}
+
